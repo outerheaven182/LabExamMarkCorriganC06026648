@@ -17,11 +17,11 @@ public class Path
         {
             for (int i = 1; i < Waypoints.Count; i++)
             {
-                Debug.DrawLine(Waypoints[i - 1], Waypoints[i], Color.cyan);
+                Debug.DrawLine(Waypoints[i - 1], Waypoints[i], Color.clear);
             }
             if (Looped && (Waypoints.Count > 0))
             {
-                Debug.DrawLine(Waypoints[0], Waypoints[Waypoints.Count - 1], Color.cyan);
+                Debug.DrawLine(Waypoints[0], Waypoints[Waypoints.Count - 1], Color.clear);
             }
         }
     }
