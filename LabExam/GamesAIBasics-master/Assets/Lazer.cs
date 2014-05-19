@@ -12,11 +12,14 @@ class Lazer:MonoBehaviour
         float width = 500;
         float height = 500;
 
+
         if ((transform.position.x < -(width / 2)) || (transform.position.x > width / 2) || (transform.position.z < -(height / 2)) || (transform.position.z > height / 2) || (transform.position.y < 0) || (transform.position.y > 100))
         {
+			gameObject.tag = "Lazer";
             Destroy(gameObject);
         }
         transform.position += transform.forward * speed;
         Debug.DrawLine(transform.position, transform.position + transform.forward * 10.0f, Color.red);
+		gameObject.tag = "Lazer";
     }
 }
