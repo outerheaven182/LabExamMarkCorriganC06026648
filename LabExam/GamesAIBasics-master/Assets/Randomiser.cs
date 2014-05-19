@@ -10,7 +10,7 @@ public class Randomiser : MonoBehaviour
 		
 		for(int i = 1; i <=10; i++)
 		{
-			Vector3 position = new Vector3(Random.Range(-100,100), Random.Range(-100,100), Random.Range(-100,100));
+			Vector3 position = new Vector3(Random.Range(-20,20), Random.Range(-20,20), Random.Range(-20,20));
 			gameObject = Instantiate(Resources.Load("Prefabs/Ammo"), position, Quaternion.identity) as GameObject;
 		}
 	}
